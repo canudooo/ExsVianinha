@@ -1,27 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int p1,p2,p3,p4,p5,nota;
-int i[5];
+int p[5];
+int i;
 
-int main()
-{
-    for(i=0; i<=4; i++)
-    {
-        printf("Insira sua nota na prova I até V, em ordem crescente:\n ");
-        scanf("%d",& p[i]);
-        i++
+int main() {
+    int i;
+
+    for (i = 0; i < 5; i++) {
+        printf("Insira sua nota na prova %d:\n", i + 1);
+        scanf("%d", &p[i]);
     }
-    switch
-{
-case (p[0]>70) && (p[1]>70) && (p[2]>70) && (p[3]>70) && (p[4]>70);
-        priftf("A");
-    case (p[0]>70) && (p[1]>70) && (p[2]>70) && (p[3]>70) || (p[4]>70);
-        priftf("B");
-    case (p[0]>70) && (p[1]>70) && (p[2]>70) || (p[3]>70) && (p[4]>70);
-        priftf("C");
-        default
-        priftf("REPROVADO!");
+
+    if (p[0] > 70 && p[1] > 70 && p[2] > 70 && p[3] > 70 && p[4] > 70) {
+        printf("A");
+    } else if ((p[0] > 70 && p[1] > 70 && p[2] > 70 && p[3] > 70) || p[4] > 70) {
+        printf("B");
+    } else if ((p[0] > 70 && p[1] > 70 && p[2] > 70) || (p[3] > 70 && p[4] > 70)) {
+        printf("C");
+    } else {
+        printf("REPROVADO!");
     }
 
     return 0;
