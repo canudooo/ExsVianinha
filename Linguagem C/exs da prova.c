@@ -32,6 +32,9 @@ float rep=0;
   ap=(ap*100/5);
   rec=(rec*100/5);
   rep=(rep*100/5);
+  
+  printf("\n");
+  
   printf("Porcentagem de aprovados:%.0f%\n",ap);
   printf("Porcentagem de recs:%.0f%\n",rec);
   printf("Porcentagem de reprovados:%.0f%",rep);
