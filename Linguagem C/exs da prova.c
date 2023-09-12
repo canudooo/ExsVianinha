@@ -35,9 +35,11 @@ float rep=0;
   
   printf("\n");
   
-  printf("Porcentagem de aprovados:%.0f%\n",ap);
+  printf("Porcentagem de aprovados:%.0f%\n",ap); 
   printf("Porcentagem de recs:%.0f%\n",rec);
-  printf("Porcentagem de reprovados:%.0f%",rep);
+  printf("Porcentagem de reprovados:%.0f%\n",rep);
   
+  /*Esse %.0f serve para arrendodar até a zero casa decimal (não colocar casa decimal) na variáve
+  tipo float, es fosse %.0d seria a mesma coisa, só que para uma variavel do tipo inteiro.*/
 return 0;
 }
